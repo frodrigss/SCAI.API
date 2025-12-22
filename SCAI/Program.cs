@@ -14,9 +14,13 @@ using SCAI.Repositories.Interfaces;
 using SCAI.Services;
 using SCAI.Services.Interfaces;
 
-Env.TraversePath().Load();
-
 var builder = WebApplication.CreateBuilder(args);
+
+if (builder.Environment.IsDevelopment())
+{
+    Env.TraversePath().Load();
+}
+
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection"))
