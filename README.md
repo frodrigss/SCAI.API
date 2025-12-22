@@ -53,7 +53,7 @@ The solution adopts a **Three-Layer Architecture**, promoting separation of conc
 
 | Layer | Component | Responsibility |
 | :--- | :--- | :--- |
-| **1. Presentation** | `Controllers` | API entry point. Manages HTTP requests, DTO validation, and standard response formatting (Envelope Pattern). |
+| **1. Presentation** | `Controllers` | API entry point. Manages HTTP requests and DTO validation. |
 | **2. Business (Domain)** | `Services` | The heart of the application. Contains business logic, Empire rule validations, and access policy checks. |
 | **3. Data Access** | `Repositories` | Database abstraction using **EF Core**. Manages transactions and optimized SQL queries. |
 
@@ -85,7 +85,7 @@ Security is the pillar of the Empire. The system uses **Role-Based Access Contro
 | 🟡 **Commander** | 2 (Manager)| **Write**. Can update items and access items with permission 2. |
 | ⚪ **Trooper** | 3 (Read) | **Read only**. Can view the list of items with permission 3. |
 
-### Authentication Flow
+### Authentication flow
 
 1.  **Register**: Endpoint `/api/auth/register`. Passwords are hashed with **BCrypt**.
 2.  **Login**: Endpoint `/api/auth/login`. Returns a **JWT (JSON Web Token)**.
@@ -93,7 +93,7 @@ Security is the pillar of the Empire. The system uses **Role-Based Access Contro
 
 ---
 
-## ⚙️ Installation and Configuration
+## ⚙️ Installation and configuration
 
 ### Prerequisites
 
@@ -162,7 +162,7 @@ dotnet test
 
 ---
 
-## 📂 Folder Structure
+## 📂 Folder structure
 
 ```
 SCAI.API/

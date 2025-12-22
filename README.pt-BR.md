@@ -52,7 +52,7 @@ A solução adota uma **Arquitetura Três Camadas**, promovendo a separação de
 
 | Camada | Componente | Responsabilidade |
 | :--- | :--- | :--- |
-| **1. Apresentação** | `Controllers` | Ponto de entrada da API. Gerencia requisições HTTP, validação de DTOs e formatação de respostas padrão (Envelope Pattern). |
+| **1. Apresentação** | `Controllers` | Ponto de entrada da API. Gerencia requisições HTTP e validação de DTOs. |
 | **2. Negócio (Domain)** | `Services` | O coração da aplicação. Contém a lógica de negócios, validações de regras do Império e verificação de políticas de acesso. |
 | **3. Acesso a Dados** | `Repositories` | Abstração do banco de dados utilizando **EF Core**. Gerencia transações e consultas SQL otimizadas. |
 
