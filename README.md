@@ -93,7 +93,7 @@ Security is the pillar of the Empire. The system uses **Role-Based Access Contro
 
 ---
 
-## ⚙️ Installation and Configuration
+## ⚙️ Installation and configuration
 
 ### Prerequisites
 
@@ -162,7 +162,7 @@ dotnet test
 
 ---
 
-## 📂 Folder Structure
+## 📂 Folder structure
 
 ```
 SCAI.API/
