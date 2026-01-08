@@ -7,7 +7,7 @@
 <div align="center">
 
 [![NET](https://img.shields.io/badge/.NET-10.0-512BD4?style=flat&logo=dotnet)](https://dotnet.microsoft.com/)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat&logo=github-actions)](https://github.com/seuusuario/SCAI.API/actions)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat&logo=github-actions)](https://github.com/frodrigss/SCAI.API/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat)](LICENSE.txt)
 [![Star Wars](https://img.shields.io/badge/Empire-Galactic-black?style=flat&logo=star-wars)](https://starwars.fandom.com/wiki/Galactic_Empire)
 
